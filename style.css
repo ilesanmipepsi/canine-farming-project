@@ -1,3 +1,106 @@
 body {
-    font-size: 15pt;
+  background-color: #fff; /* White background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; /* Adjust padding as needed */
+  background-color: transparent; /* Transparent header background */
+}
+
+#avatar {
+  background-color: #F0C800; /* Example gold color for avatar */
+  color: #fff; /* White text example */
+  font-size: 20px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px; /* Aligns text vertically */
+}
+
+#username {
+  color: #333; /* Dark gray text */
+  font-size: 20px;
+  margin-left: 10px; /* Adjust margin as needed */
+}
+
+img {
+  width: 80%; /* Responsive width based on viewport size */
+  max-width: 250px; /* Limit maximum width on larger screens */
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 24px; /* Adjust font size as needed */
+  margin-top: 20px; /* Adjust margin as needed */
+  margin-bottom: 10px; /* Adjust margin as needed */
+  text-align: center; /* Assuming you want it centered */
+  color: #333; /* Dark gray text (adjustable) */
+}
+
+p {
+  line-height: 1.5; /* Adjust line-height as needed */
+  margin-top: 10px; /* Optional margin-top for some spacing */
+  margin-bottom: 10px; /* Optional margin-bottom for some spacing */
+  font-size: 16px;
+  color: #333; /* Dark gray text */
+  text-align: center;
+  padding: 20px;
+}
+
+ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 20px; /* Reset default padding */
+}
+
+ul li {
+  display: inline-block; /* Display list items inline */
+  margin-right: 20px; /* Add space between list items */
+}
+
+.button-container {
+  display: flex; /* Enable flexbox layout */
+  justify-content: center; /* Center content horizontally */
+  padding: 10px 20px; /* Add some space around the button */ 
+}
+
+.button {
+  background-color: #2ECC71; /* Example button color (adjustable) */
+  color: #fff; /* White text example */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Indicates clickable element */
+  margin-top: 10px; /* Optional margin on top */
+  margin-bottom: 20px; /* Add margin below the button */
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Change to a different green shade */
+  color: #fff; /* Maintain white text */
+  cursor: pointer; /* Indicates clickable element */
+}
+
+/* Media Queries for Smaller Screens */
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack elements vertically on mobile */
+    align-items: center; /* Center elements vertically */
+  }
+
+  #username {
+    margin-top: 10px; /* Adjust margin for vertical layout */
+  }
+
+  img {
+    margin-bottom: 20px; /* Add space below image on mobile */
+  }
+
 }
